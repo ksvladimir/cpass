@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	user-select: none;
+	-webkit-user-select: none;
+	padding: 10px;
+	width: 250px;
+	height: 100%;
+  background-color: #ededed;
+}
+
+.title {
+  text-align: center;
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  color: #555;
+  background-color: #fff;
+	outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	padding: 6px 12px;
+	text-align: center;
+}
+
+.form-control.valid-pass-name {
+  color: green !important;
+}
+
+.form-control.error {
+  color: red !important;
+}
+
+.btn {
+  display: inline-block;
+  color: #333;
+  background-color: #fff;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn[disabled] {
+  opacity: .65;
+  box-shadow: none;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.center {
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "cpass",
+  "version": "1.0",
+  "description": "pass ui for chrome",
+  "icons": {
+    "128": "icon-128.png",
+    "48": "icon-48.png"
+  },
+  "permissions": [
+    "activeTab",
+    "nativeMessaging"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon-19.png",
+    "default_title": "cpass",
+    "default_popup": "popup.html"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9pB5OuIz+oG6G+koNEGbMbq09nR2clYVTOWVF4j0hnTYpW1fjyqQq3H4Vo6tZzZR8s/VA+eQGZz/bKc9nuCSb95fwSrxHGB/oTWXg4B3EV3Avhl7LbKLVPN9bpnvR05v5DaosmzHHmqid/OqNRbBp4krynuZfi4iWDeZx4QuVv2EVZMzI8qieSw2imBPKsu6kv1IN3/Cn25QodD1JH9LIlssbkknm/qRPW8waSZcazUcyYpJFlI3MiFClsd+1lm37jcwrjHvoZiqmIb6wWLOzbMlHLgsuphHRclt8Xj6R4/FuBD5NiCMN3hP8okcvjPTpl8NupNFAhsL+AsXqzX47QIDAQAB"
+}
+

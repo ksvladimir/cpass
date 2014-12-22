@@ -1,0 +1,9 @@
+{
+  "name": "com.ksvladimir.cpass",
+  "description": "pass ui for chrome",
+  "path": "CPASS_NATIVE_APP",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://CPASS_EXTENSION_ID/"
+  ]
+}

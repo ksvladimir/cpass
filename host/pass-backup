@@ -1,0 +1,21 @@
+#!/bin/bash
+
+set -e
+
+cd $HOME
+
+tar -zcf .password-store-0.tgz .password-store
+gpg2 --encrypt .password-store-0.tgz
+rm -f .password-store-0.tgz
+
+cd "Google Drive/Documents/Backup"
+
+rm -f .password-store-5.tgz.gpg
+
+for i in `seq 4 0`; do
+    if [ -f .password-store-$i.tgz.gpg ]; then
+        mv .password-store-$i.tgz.gpg .password-store-$((i+1)).tgz.gpg
+    fi
+done
+
+mv $HOME/.password-store-0.tgz.gpg ./.password-store-0.tgz.gpg
